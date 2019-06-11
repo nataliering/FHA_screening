@@ -1,0 +1,2 @@
+ST	ptxP	ptxA	ptxB	ptxC	ptxD	ptxE	prn	fim2	fim3	fhaB	fhaB2
+1	1	1	1	1	1	1	1	1	1	1	1
