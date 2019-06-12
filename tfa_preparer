@@ -10,5 +10,4 @@ if [ "$1" == "--help" ] ; then
 fi
 
 sed -i "s/$1/$2/g" $1.fas
-line_break_remover $1.fas
-mv $1.fas.nobreaks.fasta $2.tfa
+mv $1.fas $2.tfa
