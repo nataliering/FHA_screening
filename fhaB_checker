@@ -1,0 +1,23 @@
+#! /bin/bash
+
+if [ "$1" == "-h" ] ; then
+    echo "Usage: fhaB_checker <strain name>"
+    exit 0
+fi
+
+if [ "$1" == "--help" ] ; then
+    echo "Usage: fhaB_checker <strain name>"
+    exit 0
+fi
+
+echo "BWA memming"
+bwa mem -t 8 FhaB_2_0G.fasta $1_1.fastq.gz $1_2.fastq.gz
+echo "Doing various Samtools conversions"
+samtools view -b -o $1.bam $1.sam
+samtools sort -o $1.sorted.bam $1.bam
+reads=`samtools mpileup -r fhaB_2:1077-1077 $1.sorted.bam | awk '{print $5'}`
+echo "$1        $reads" >> fhaB_checker_output.tsv
+rm $1.sam
+rm $1.bam
+rm $1.sorted.bam
+echo "Done!"
