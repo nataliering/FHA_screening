@@ -7,6 +7,6 @@ Code used in our paper Bordetella pertussis genomes closed using long reads reve
 **[mlst](https://github.com/tseemann/mlst)**  
 `mlst --legacy --csv --scheme bpertussis input_genomes.fasta > mlst_results.csv `
 
-**[tfa_preparer](https://github.com/nataliering/FHA_screening/blob/master/tfa_preparer)**                                       
-`tfa_preparer BORD00XXXX gene_name`
+**[tfa_prepper](https://github.com/nataliering/FHA_screening/blob/master/tfa_preparer)**                                       
+`tfa_prepper BORD00XXXX gene_name`
 
