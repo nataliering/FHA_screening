@@ -1,5 +1,5 @@
 # FHA_screening
-Code used in our paper Bordetella pertussis genomes closed using long reads reveal changes in Filamentous Hemagglutinin gene 
+Code used in thesis chapter "Closed Bordetella pertussis genomes uncover changes in Filamentous Hemagglutinin gene" 
 
 ## Commands for tools mentioned in manuscript
 
