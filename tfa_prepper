@@ -1,11 +1,11 @@
 #! /bin/bash
 
 if [ "$1" == "-h" ] ; then
-    echo "Usage: tfa_preparer <BORD00XXXX ID (will assume .fas and sequence headers within the .fas share the same ID> <gene_name (out will be gene_name.tfa)>"
+    echo "Usage: tfa_prepper <BORD00XXXX ID (will assume .fas and sequence headers within the .fas share the same ID> <gene_name (out will be gene_name.tfa)>"
     exit 0
 fi
 if [ "$1" == "--help" ] ; then
-    echo "Usage: tfa_preparer <BORD00XXXX ID (will assume .fas and sequence headers within the .fas share the same ID> <gene_name (out will be gene_name.tfa)>"
+    echo "Usage: tfa_prepper <BORD00XXXX ID (will assume .fas and sequence headers within the .fas share the same ID> <gene_name (out will be gene_name.tfa)>"
     exit 0
 fi
 
